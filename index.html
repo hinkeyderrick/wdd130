@@ -15,6 +15,7 @@
     }
 
     header img {
+        need image
     width: 178px;
     float: left;
 }
@@ -79,10 +80,13 @@ nav a:hover {
 
 section {
     background: #F1E5D0;
-    width: 40%;
     height: 420px;
-    float: left;
-    margin: 10px;
+}
+.col_left {
+    grid-column: 1 / 2;
+}
+.col_right {
+    grid-column: 2 / 3;
 }
 section img {
     max-width: 100%;
@@ -90,6 +94,23 @@ section img {
 
 footer {
     clear: both;
+    background: url(image) 0, -754px;
+    display: gird;
+    grid-template-columns: 1fr 1fr;
+    color: #F1E5D0;
+}
+footer li {
+    list-style-type: none;
+
+}
+footer li a {
+    color: tan;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+main{
+    display: grid;
+    grid-template-columns: 1fr 1fr .3fr;
 }
     
     
@@ -108,21 +129,25 @@ footer {
         <a href="#">project</a>
        </nav>
        <main>
-        <section>
+        <section class="col_left"
             <img src="images/"
-        </section>
-        <section>ice</section>
+        section>
+        <section class="col_right"
+            ice
+    section>
         <section>project</section>
         <section>about me</section>
         <section>form</section>
        </main>
        <footer>
-        <a href="#">home</a>
-        <a href="#">wwr</a>
-        <a href="#">ice</a>
-        <a href="#">project</a>
+        <ul>
+           <a href="#">home</a>
+           <a href="#">wwr</a>
+           <a href="#">ice</a>
+           <a href="#">project</a>
+        <ul>
+        <p>Copyright Alevy 2025 &copy;<p>
 
-        Copyright Alevy 2025 &copy;
        </footer>
     </div>
 </body>
