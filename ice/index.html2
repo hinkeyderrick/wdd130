@@ -24,15 +24,27 @@
 .spoloight img{
     width: 200 px;
 }
+.first{
+   height: 250px;
+   width: 250;
+   border: 10px solid white;
+   border-radius: 50%;
+   overflow: hidden;
+}
     <style>
     </head>
     <h1><p>First Presidency</p><h1>
+    <div class="first">
+    <img src="images/oaks.webp" alt=Elder Oaks">
+    <img src="images/eyring.webp" alt=Elder Eyring">
+    <img src="images/christofferson.webp" alt=Elder Christofferson">
+
     <body>
          <h3><div id="containor"> 
            <div class="spolight">
            <img src="images/gong.webp" alt="Elder Gong">
            <img src="images/bednar.webp" alt="Elder bednar">
-           <img src="images/Holland.webp" alt="Elder Holland">
+           <img src="images/holland.webp" alt="Elder Holland">
            <img src="images/uchtdorf.webp" alt="Elder uchtdorf">
            <img src="images/cook.webp" alt="Elder cook">
            <img src="images/andersen.webp" alt="Elder andersen">
@@ -41,6 +53,7 @@
            <img src="images/renlund.webp" alt="Elder renlund">
            <img src="images/soares.webp" alt="Elder soares">
            <img src="images/kearon.webp" alt="Elder kearon">
+           <img src="images/question.img" alt="question mark">
            </div><h3>
 
          <div>
