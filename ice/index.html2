@@ -29,18 +29,34 @@
    width: 250;
    border: 10px solid white;
    border-radius: 50%;
-   overflow: hidden;
+   overflow: hidden; 
+} .title {
+  margin-top: 30px;
+  font-size: 1.8em;
+  text-shadow: 2px 2px 4px #000;
+}
+.subtitle {
+  margin-top: 30px;
+  font-size: 1.2em;
+  text-shadow: 2px 2px 4px #000;}
+   img{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-top: 15px;
 }
     <style>
     </head>
-    <h1><p>First Presidency</p><h1>
+    <body>
+    <h1 class="title">First Presidency</h1>
     <div class="first">
     <img src="images/oaks.webp" alt=Elder Oaks">
     <img src="images/eyring.webp" alt=Elder Eyring">
     <img src="images/christofferson.webp" alt=Elder Christofferson">
 
-    <body>
-         <h3><div id="containor"> 
+          <h2 calss="subtitle"> Quorum of the Twelve Apostles</h2>
+         <div id="containor"> 
            <div class="spolight">
            <img src="images/gong.webp" alt="Elder Gong">
            <img src="images/bednar.webp" alt="Elder bednar">
@@ -54,7 +70,7 @@
            <img src="images/soares.webp" alt="Elder soares">
            <img src="images/kearon.webp" alt="Elder kearon">
            <img src="images/question.img" alt="question mark">
-           </div><h3>
+           </div>
 
          <div>
          <body>
