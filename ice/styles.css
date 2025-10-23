@@ -3,6 +3,36 @@ header img{
   width:200px;
   float: left;
 }
+header {
+  background: linear-gradient(to right, #2a002a, #1a001a);
+  border-bottom: 3px solid #ff8800;
+  text-align: center;
+  padding: 0.5em 0;
+  position: relative;
+  box-shadow: 0 0 10px #ff8800;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 2em;
+}
+nav li {
+  font-family: 'Creepster', cursive;
+  font-size: 1.5em;
+  color: #ff8800;
+  cursor: pointer;
+  text-shadow: 0 0 8px #ff6600;
+  transition: all 0.3s ease-in-out;
+}
+
+nav li:hover {
+  color: #fff;
+  text-shadow: 0 0 18px #ff6a00, 0 0 30px #ff2200;
+  transform: scale(1.2) rotate(-5deg);
+}
+
 body {
   font-family: 'Open Sans', sans-serif;
   background: radial-gradient(circle at center, #120016 0%, #000 100%);
@@ -28,8 +58,16 @@ nav li{
   text-shadow: 0 0 8px #ff6600;
   transition: all 0.4s ease-in-out; 
 }
+@keyframes flicker {
+  0%, 19%, 21%, 23%, 25%, 54%, 56%, 100% {
+    opacity: 1;
+  }
+  20%, 24%, 55% {
+    opacity: 0.4;
+  }
+}
 
-section{
-  display: grid;
-  grid-template-columns: auto;
+main{
+  text-align: center;
+  margin-top: 2em;
 }
