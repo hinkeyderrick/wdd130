@@ -70,4 +70,38 @@ nav li{
 main{
   text-align: center;
   margin-top: 2em;
+} 
+main h1 {
+  font-family: 'Creepster', cursive;
+  color: #ff6a00;
+  font-size: 4em;
+  text-shadow: 0 0 10px #ff2200, 0 0 30px #ff6600, 0 0 60px #ffa500;
+  animation: flicker 3s infinite;
+} 
+body::before,
+body::after {
+  content: "🦇 🎃 🕷️ 🕸️";
+  position: fixed;
+  top: -10%;
+  left: 0;
+  width: 100%;
+  font-size: 2em;
+  opacity: 0.2;
+  animation: floatSymbols 25s linear infinite;
+}
+
+@keyframes floatSymbols {
+  0% { transform: translateY(100vh) translateX(0); opacity: 0.2; }
+  50% { opacity: 0.4; }
+  100% { transform: translateY(-110vh) translateX(20px); opacity: 0.2; }
+}
+footer {
+  text-align: center;
+  font-family: 'Creepster', cursive;
+  font-size: 1.5em;
+  color: #ff8800;
+  padding: 1em 0 0.5em;
+  border-top: 3px solid #ff8800;
+  margin-top: 2em;
+  text-shadow: 0 0 10px #ff6600, 0 0 20px #ff2200;
 }
