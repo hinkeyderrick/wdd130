@@ -164,27 +164,36 @@ grid-row-gap: 0px;
 /* Activity 6 styles */ 
 .content6 {
   /* This is the parent of the activity 6 boxes. */
+   display: grid;
+  grid-template-areas:
+    "red red"
+    "green yellow"
+    "blue blue";
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: 150px auto 150px;
+  width: 100%;
+  height: 100vh;
 }
-.red6 {
-  width: 100px; 
-  height: 100px; 
-  background-color: red; 
-} 
-.green6 {
-  width: 100px; 
-  height: 100px; 
-  background-color: green; 
-} 
+.red6 { 
+  background: red;
+   grid-area: red;
+   }
+.green6 { 
+  background: green; 
+  grid-area: green;
+ }
 .yellow6 {
-  width: 100px; 
-  height: 100px; 
-  background-color: gold; 
-} 
-.blue6 {
-  width: 100px; 
-  height: 100px; 
-  background-color: blue; 
-} 
+  background: gold;
+  grid-area: yellow;
+  color: black;
+  font-size: 1rem;
+  padding: 1rem;
+  overflow-y: auto;
+}
+.blue6 { 
+  background: blue; 
+  grid-area: blue;
+ }
 
 
 /* Do not make any changes below here */
