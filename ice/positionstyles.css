@@ -35,27 +35,32 @@
 .content2 {
   /* This is the parent of the activity 2 boxes. */
   display: grid;
-  grid-template-rows: 50px 50px 50px 50px 50px;
+  grid-template-rows: 50px 50px 50px 50px 50px; 
+  justify-items: left;
 }
 .red2 {
   width: 100px; 
   height: 100px; 
   background-color: red; 
+  grid-row: 1/5;
 } 
 .green2 { 
   width: 100px; 
   height: 100px; 
   background-color: green; 
+  grid-row: 2/5;
 } 
 .yellow2 {
   width: 100px; 
   height: 100px; 
   background-color: gold; 
+  grid-row: 3/5;
 } 
 .blue2 {
   width: 100px; 
   height: 100px; 
   background-color: blue; 
+  grid-row: 4/5;
 } 
 /* Activity 3 styles */ 
 .content3 {
