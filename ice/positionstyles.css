@@ -86,7 +86,7 @@ grid-row-gap: 0px;
 
 .green3 {
   background: green;
-  grid-area:2 / 1 / 5 / 3;
+  grid-area: 2 / 1 / 5 / 3;
 }
 
 .yellow3 {
@@ -96,7 +96,7 @@ grid-row-gap: 0px;
 
 .blue3 {
   background: blue;
-  grid-area:5 / 1 / 6 / 6;
+  grid-area: 5 / 1 / 6 / 6;
 }
 /* Activity 4 styles */ 
 .content4 {
