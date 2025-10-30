@@ -36,36 +36,38 @@
   /* This is the parent of the activity 2 boxes. */
   display: grid;
   grid-template-rows: 50px 50px 50px 50px 50px; 
-  justify-items: left;
+  grid-template-columns: 50px 50px 50px 50px 50px;
+  justify-items: start;
+  align-items: start;
   gap:0px;
 }
 .red2 {
   width: 100px; 
   height: 100px; 
   background-color: red; 
-  grid-row: 1/5;
-  justify-content: left;
+  grid-row: 1;
+  grid-column: 1;
 } 
 .green2 { 
   width: 100px; 
   height: 100px; 
   background-color: green; 
-  grid-row: 2/5;
-  justify-content: left;
+  grid-row: 2;
+  grid-column: 2;
 } 
 .yellow2 {
   width: 100px; 
   height: 100px; 
   background-color: gold; 
-  grid-row: 3/5; 
-  justify-content: left ;
+  grid-row: 3;
+  grid-column: 3;
 } 
 .blue2 {
   width: 100px; 
   height: 100px; 
   background-color: blue; 
-  grid-row: 4/5;
-  justify-content: left;
+  grid-row: 4;
+  grid-column: 4;
 } 
 /* Activity 3 styles */ 
 .content3 {
