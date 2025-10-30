@@ -171,30 +171,46 @@ grid-row-gap: 0px;
     "red red"
     "green yellow"
     "blue blue";
-  grid-template-columns: 1fr 2fr;
-  grid-template-rows: 150px auto 150px;
-  width: 100%;
-  height: 100vh;
+  gap: 10px;
+  position: relative;
+  width: 600px;
+  height: 600px;
 }
-.red6 { 
+
+.red6, .green6, .blue6, .yellow6 {
+  position: absolute;
+}
+
+.red6 {
   background: red;
-   grid-area: red;
-   }
-.green6 { 
-  background: green; 
-  grid-area: green;
- }
+  width: 300px;
+  height: 200px;
+  top: 0;
+  left: 0;
+}
+
+.green6 {
+  background: green;
+  width: 200px;
+  height: 200px;
+  bottom: 100px;
+  left: 50px;
+}
+
 .yellow6 {
   background: gold;
-  grid-area: yellow;
-  color: black;
-  font-size: 1rem;
-  padding: 1rem;
-  overflow-y: auto;
+  width: 250px;
+  height: 350px;
+  right: 50px;
+  bottom: 50px;
 }
-.blue6 { 
-  background: blue; 
-  grid-area: blue;
+
+.blue6 {
+  background: blue;
+  width: 400px;
+  height: 350px;
+  left: 100px;
+  top: 150px;
  }
 
 
