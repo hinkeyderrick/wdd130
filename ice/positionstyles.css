@@ -70,24 +70,29 @@ grid-template-columns: repeat(5, 1fr);
 grid-template-rows: repeat(5, 1fr);
 grid-column-gap: 0px;
 grid-row-gap: 0px;
+height: 400px
 }
 .red3 {
   width: 100%;  
+  height: auto;
   background-color: red; 
   grid-area: 1 / 1 / 2 / 6;
 } 
 .green3 {
   width: 100%;  
+  height: auto;
   background-color: green;
   grid-area: 2 / 1 / 5 / 3;
 } 
 .yellow3 {
   width: 100%; 
+  height:auto;
   background-color: gold; 
   grid-area: 2 / 4 / 5 / 6;
 } 
 .blue3 {
   width: 100%;
+  height:auto;
   background-color: blue; 
   grid-area: 5 / 1 / 6 / 6;
 } 
