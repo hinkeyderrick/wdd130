@@ -100,21 +100,25 @@ grid-row-gap: 0px;
   width: 100px; 
   height: 100px; 
   background-color: red; 
+  grid-area: 1 / 1 / 7 / 4;
 } 
 .green4 {
   width: 100px; 
   height: 100px; 
   background-color: green; 
+  grid-area: 1 / 4 / 3 / 7;
 } 
 .yellow4 {
   width: 100px; 
   height: 100px; 
   background-color: gold; 
+  grid-area: 3 / 4 / 5 / 7;
 } 
 .blue4 {
   width: 100px; 
   height: 100px; 
   background-color: blue; 
+  grid-area: 5 / 4 / 7 / 7;
 } 
 /* Activity 5 styles */ 
 .content5 {
