@@ -67,26 +67,22 @@ grid-column-gap: 0px;
 grid-row-gap: 0px;
 }
 .red3 {
-  width: 100px; 
-  height: 100px; 
+  width: 100px;  
   background-color: red; 
   grid-area: 1 / 1 / 2 / 6;
 } 
 .green3 {
-  width: 100px; 
-  height: 100px; 
+  width: 100px;  
   background-color: green;
   grid-area: 2 / 1 / 5 / 3;
 } 
 .yellow3 {
   width: 100px; 
-  height: 100px; 
   background-color: gold; 
   grid-area: 2 / 4 / 5 / 6;
 } 
 .blue3 {
   width: 100px;
-  height: 100px; 
   background-color: blue; 
   grid-area: 5 / 1 / 6 / 6;
 } 
