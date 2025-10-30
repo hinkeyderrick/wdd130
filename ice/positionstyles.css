@@ -73,8 +73,8 @@
 .content3 {
   /* This is the parent of the activity 3 boxes. */
    display: grid;
-    height: 100vh;
-    width: 100vw;
+    height: 200px;
+    width: 200px;
     grid-template-columns: 1fr 0.2fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
 }
