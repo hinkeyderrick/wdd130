@@ -37,6 +37,7 @@
   display: grid;
   grid-template-rows: 50px 50px 50px 50px 50px; 
   justify-items: left;
+  gap:0px;
 }
 .red2 {
   width: 100px; 
