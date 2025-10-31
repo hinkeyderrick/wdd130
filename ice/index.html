@@ -7,118 +7,125 @@
 </head>
 <body>
 <style>
-     body{
-        background:#212524;
-    }
+     body {
+    background: #212524;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #F1E5D0;
+}
 
-    header img {
-    
-    width: 178px;
-    float: left;
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #2E303A;
+    padding: 20px 40px;
+    border-bottom: 4px solid #4d1909;
+}
+
+header img {
+    width: 150px;
+    height: auto;
 }
 
 header h1 {
     font-size: 2em;
     color: #F1E5D0;
-    float: left;
-    margin: 50px 80px 50px 112px;
-    text-shadow: 4px 4px 2px #2E303A;
+    text-shadow: 3px 3px 2px #000;
+    margin: 0;
 }
 
 #wrapper {
-    width: 900px;
-    min-height: 1000px;
+    max-width: 1100px;
     background: #4d1909;
-    margin: auto;
+    margin: 40px auto;
     border: #2E303A solid 5px;
     border-radius: 20px;
     overflow: hidden;
-    display: grid;
+    display: flex;
+    flex-direction: column;
 }
 
 nav {
     background: lightslategray;
-    clear: both;
-    width: 100%;
-    height: 50px;
-    text-align: center;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    justify-items: center;
-    justify-content: space-evenly;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    align-items: center;
+    text-align: center;
     border-top: 3px solid #2E303A;
     border-bottom: 5px solid #2E303A;
-    font-family: Arial, Helvetica, sans-serif;
 }
 
 nav a {
-    font-size: 1.5em;
+    font-size: 1.2em;
     color: #f1e5d0;
     text-decoration: none;
-    display: flex;
-    align-items: center;
-    padding: 0 40px;
+    padding: 15px 0;
+    transition: background 0.3s ease, color 0.3s ease;
 }
 
 nav a:hover {
     background: #70656D;
-    text-shadow: 4px 4px 2px #2E303A;
-    
+    text-shadow: 3px 3px 2px #2E303A;
 }
 
-#ads {
-    width: 250px;
-    background: #70656D;
-    border: 3px solid #2E303A;
-    position: fixed;
-    right: -273px;
-    color: #F1E5D0; 
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
     padding: 20px;
-    transition: right .75s ease-out;
-}
-#ads:hover{
-    right: 0;
-    transition: right .85s ease-in;
+    background: #F1E5D0;
+    color: #2E303A;
 }
 
 section {
     background: #F1E5D0;
-    height: 420px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 8px rgba(0,0,0,0.2);
 }
-.col_left {
-    grid-column: 1 / 2;
-}
-.col_right {
-    grid-column: 2 / 3;
-}
+
 section img {
     max-width: 100%;
+    border-radius: 10px;
 }
 
 footer {
-    clear: both;
-    background: url(image) 0, -754px;
-    display: gird;
+    background: #2E303A url("image.jpg") no-repeat center;
+    background-size: cover;
+    display: grid;
     grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    padding: 30px;
     color: #F1E5D0;
+    text-align: center;
 }
+
+footer ul {
+    padding: 0;
+}
+
 footer li {
     list-style-type: none;
-
+    margin: 8px 0;
 }
+
 footer li a {
     color: tan;
     text-decoration: none;
-    font-size: 1.2em;
+    font-size: 1.1em;
+    transition: color 0.3s ease;
 }
-main{
-    display: grid;
-    grid-template-columns: 1fr 1fr .3fr;
-}
-    footer p{
-        justify-content: left;
-    }
 
+footer li a:hover {
+    color: #fff;
+}
+
+footer p {
+    text-align: left;
+    margin-top: 10px;
+}
 </style>
 <body>
     <h1><p>Hinkeys web page</p></h1>
@@ -146,7 +153,7 @@ main{
             <p>home info page</p>
     </section> 
     <img src="images/wwr.jpeg" alk="computer">
-    <p>wwr infor page</p>
+    <p>wwr info page</p>
         <main></main>
      <table border1="1">
         <footer>
