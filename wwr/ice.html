@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hinekys portfolio</title>
+</head>
+<style>
+    p { 
+    text-align: center;
+    color: #EFE5D0;
+    }
+    body{
+        background:#212524;
+    }
+
+    header img {
+    
+    width: 178px;
+    float: left;
+}
+
+header h1 {
+    font-size: 2em;
+    color: #F1E5D0;
+    float: left;
+    margin: 50px 80px 50px 112px;
+    text-shadow: 4px 4px 2px #2E303A;
+}
+
+#wrapper {
+    width: 900px;
+    min-height: 1000px;
+    background: #4d1909;
+    margin: auto;
+    border: #2E303A solid 5px;
+    border-radius: 20px;
+    overflow: hidden;
+    display: grid;
+}
+
+nav {
+    background: lightslategray;
+    clear: both;
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
+    justify-content: space-evenly;
+    border-top: 3px solid #2E303A;
+    border-bottom: 5px solid #2E303A;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+nav a {
+    font-size: 1.5em;
+    color: #f1e5d0;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    padding: 0 40px;
+}
+
+nav a:hover {
+    background: #70656D;
+    text-shadow: 4px 4px 2px #2E303A;
+    
+}
+
+#ads {
+    width: 250px;
+    background: #70656D;
+    border: 3px solid #2E303A;
+    position: fixed;
+    right: -273px;
+    color: #F1E5D0; 
+    padding: 20px;
+    transition: right .75s ease-out;
+}
+#ads:hover{
+    right: 0;
+    transition: right .85s ease-in;
+}
+
+section {
+    background: #F1E5D0;
+    height: 420px;
+}
+.col_left {
+    grid-column: 1 / 2;
+}
+.col_right {
+    grid-column: 2 / 3;
+}
+section img {
+    max-width: 100%;
+}
+
+footer {
+    clear: both;
+    background: url(image) 0, -754px;
+    display: gird;
+    grid-template-columns: 1fr 1fr;
+    color: #F1E5D0;
+}
+footer li {
+    list-style-type: none;
+
+}
+footer li a {
+    color: tan;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+main{
+    display: grid;
+    grid-template-columns: 1fr 1fr .3fr;
+}
+    footer p{
+        text-align: right;
+    }
+    
+</style>
+<body>
+    <p>Hinkeys Portfolio</p>
+
+    <div id="wrapper">
+       <header>
+        <img src="logo.png" alt="flying chicken">
+       </header>
+       <nav>
+        <a href="#">home</a>
+        <a href="#">wwr</a>
+        <a href="#">ice</a>
+        <a href="#">project</a>
+       </nav>
+       
+       
+       
+       
+       
+       
+       
+       <main>
+       
+       </main>
+       <footer>
+        <ul>
+           <a href="#">home</a>
+           <a href="#">wwr</a>
+           <a href="#">ice</a>
+           <a href="#">project</a>
+        <ul>
+        <h4><p>Copyright Hinkey 2025 &copy;<p><h4>
+
+       </footer>
+    </div>
+</body>
+</html>
