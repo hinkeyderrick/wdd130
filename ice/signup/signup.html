@@ -117,18 +117,40 @@ button[type="submit"] {
   font-size: 0.75em;
   padding: 8px 0;
   cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer button img {
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+  margin-bottom: 4px;
+  border-radius: 4px;
 }
 
 .footer button:hover {
-  background-color: #333;}
-    </style>
+  background-color: #333;
+}
 
+</style>
 
 
 
 </head>
 
 <body>
+
+    <div class="header">
+      <img src="images/jesus_feeds_5000.jpeg" alt="Jesus teaching">
+      <div class="header-text">
+        <h1>Daily Feed</h1>
+        <h2>Scripture a Day</h2>
+      </div>
+    </div>
+
     <div id="formContainer">
         <h3>Sign Up for Daily Scripture Feed</h3>
         <form id="myForm">
@@ -166,12 +188,31 @@ button[type="submit"] {
         </form>
     </div>
     <div class="footer">
-      <button>OLD TESTAMENT</button>
-      <button>NEW TESTAMENT</button>
-      <button>BOOK OF MORMON</button>
-      <button>DOCTRINE AND COVENANTS</button>
-      <button>PEARL OF GREAT PRICE</button>
-    </div>
+  <button>
+    <img src="images/old_testament.webp" alt="Old Testament">
+    <span>OLD TESTAMENT</span>
+  </button>
+
+  <button>
+    <img src="images/new_testament.webp" alt="New Testament">
+    <span>NEW TESTAMENT</span>
+  </button>
+
+  <button>
+    <img src="images/book_of_mormon.webp" alt="Book of Mormon">
+    <span>BOOK OF MORMON</span>
+  </button>
+
+  <button>
+    <img src="images/doctrine_and_covenants.webp" alt="Doctrine and Covenants">
+    <span>DOCTRINE AND COVENANTS</span>
+  </button>
+
+  <button>
+    <img src="images/pearl_of_great_price.webp" alt="Pearl of Great Price">
+    <span>PEARL OF GREAT PRICE</span>
+  </button>
+</div>
 
     <div id="output"></div>
 
