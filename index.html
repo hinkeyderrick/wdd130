@@ -3,163 +3,160 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>hinekys portfolio</title>
-</head>
+    <title>Hinkey's Portfolio</title>
+
 <style>
-    p { 
-    text-align: center;
-    color: #EFE5D0;
-    }
-    body{
-        background:#212524;
-    }
 
-    header img {
-    
-    width: 178px;
-    float: left;
-}
-
-header h1 {
-    font-size: 2em;
+body {
+    margin: 0;
+    background: #212524;
+    font-family: Arial, Helvetica, sans-serif;
     color: #F1E5D0;
-    float: left;
-    margin: 50px 80px 50px 112px;
-    text-shadow: 4px 4px 2px #2E303A;
 }
 
 #wrapper {
     width: 900px;
-    min-height: 1000px;
+    margin: 40px auto;
     background: #4d1909;
-    margin: auto;
-    border: #2E303A solid 5px;
+    border: 5px solid #2E303A;
     border-radius: 20px;
     overflow: hidden;
-    display: grid;
 }
+
+header {
+    display: flex;
+    align-items: center;
+    background: #4d1909;
+    padding: 20px;
+}
+
+header img {
+    width: 120px;
+    margin-right: 20px;
+}
+
+header h1 {
+    font-size: 2.2em;
+    text-shadow: 3px 3px 2px #2E303A;
+    margin: 0;
+}
+
 
 nav {
     background: lightslategray;
-    clear: both;
-    width: 100%;
-    height: 50px;
-    text-align: center;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    justify-items: center;
+    display: flex;
     justify-content: space-evenly;
+    padding: 12px 0;
     border-top: 3px solid #2E303A;
     border-bottom: 5px solid #2E303A;
-    font-family: Arial, Helvetica, sans-serif;
 }
 
 nav a {
-    font-size: 1.5em;
-    color: #f1e5d0;
+    color: #F1E5D0;
+    font-size: 1.3em;
     text-decoration: none;
-    display: flex;
-    align-items: center;
-    padding: 0 40px;
+    font-weight: bold;
 }
 
 nav a:hover {
     background: #70656D;
-    text-shadow: 4px 4px 2px #2E303A;
-    
+    padding: 5px 10px;
+    border-radius: 8px;
 }
 
-#ads {
-    width: 250px;
-    background: #70656D;
-    border: 3px solid #2E303A;
-    position: fixed;
-    right: -273px;
-    color: #F1E5D0; 
+
+main {
     padding: 20px;
-    transition: right .75s ease-out;
-}
-#ads:hover{
-    right: 0;
-    transition: right .85s ease-in;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
 }
 
-section {
+.card {
     background: #F1E5D0;
-    height: 420px;
+    color: #2E303A;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
 }
-.col_left {
-    grid-column: 1 / 2;
-}
-.col_right {
-    grid-column: 2 / 3;
-}
-section img {
-    max-width: 100%;
+
+.card img {
+    width: 100%;
+    border-radius: 10px;
 }
 
 footer {
-    clear: both;
-    background: url(image) 0, -754px;
-    display: gird;
-    grid-template-columns: 1fr 1fr;
-    color: #F1E5D0;
+    padding: 20px;
+    background: #2E303A;
+    text-align: center;
 }
-footer li {
-    list-style-type: none;
 
-}
-footer li a {
-    color: tan;
+footer a {
+    color: #ffcc99;
     text-decoration: none;
-    font-size: 1.2em;
+    margin: 0 10px;
 }
-main{
-    display: grid;
-    grid-template-columns: 1fr 1fr .3fr;
+
+footer a:hover {
+    text-decoration: underline;
 }
-    footer p{
-        text-align: right;
-    }
-    
+
+footer p {
+    margin-top: 10px;
+}
 </style>
+
+</head>
 <body>
-    <p>Hinkeys Portfolio</p>
 
-    <div id="wrapper">
-       <header>
-        <img src="logo.png" alt="flying chicken">
-       </header>
-       <nav>
-        <a href="#">home</a>
-        <a href="#">wwr</a>
-        <a href="#">ice</a>
-        <a href="#">project</a>
-       </nav>
-       <main>
-        <section class="col_left">
+<div id="wrapper">
+
+    <header>
+        <img src="logo.png" alt="logo">
+        <h1>Hinkey's Portfolio</h1>
+    </header>
+
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">WWR</a>
+        <a href="#">ICE</a>
+        <a href="#">Projects</a>
+    </nav>
+
+    <main>
+
+        <div class="card">
             <img src="images/boat.jpeg" alt="Vahala Rafting">
-            <p>vahala rafting</p> 
-        <section class="col_right">
-            <img src="images/stone.jpeg" alt="Ice Page Info">
-         <p> ice page info</p>
-        </section>
-            <img src="images/hut.jpeg" alt="Home Page Info">
-            <p>home infor page</p>
-        </section>
-        <section>about me</section>
-        <section>form</section>
-       </main>
-       <footer>
-        <ul>
-           <a href="#">home</a>
-           <a href="#">wwr</a>
-           <a href="#">ice</a>
-           <a href="#">project</a>
-        <ul>
-        <h4><p>Copyright Hinkey 2025 &copy;<p><h4>
+            <h3>Vahala Rafting</h3>
+        </div>
 
-       </footer>
-    </div>
+        <div class="card">
+            <img src="images/stone.jpeg" alt="Ice Page Info">
+            <h3>Ice Page</h3>
+        </div>
+
+        <div class="card">
+            <img src="images/hut.jpeg" alt="Home Info">
+            <h3>Home Page Info</h3>
+        </div>
+
+        <div class="card">
+            <h2>About Me</h2>
+            <p>about me info</p>
+        </div>
+
+    </main>
+
+    <footer>
+        <a href="#">Home</a>
+        <a href="#">WWR</a>
+        <a href="#">ICE</a>
+        <a href="#">Projects</a>
+
+        <p>© 2025 Hinkey Portfolio</p>
+    </footer>
+
+</div>
+
 </body>
 </html>
